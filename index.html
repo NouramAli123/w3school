@@ -1,0 +1,645 @@
+<html>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#div_lu{
+
+ margin: 0;
+	width:1500px;
+	height:20%;
+    padding:5;
+    overflow: hidden;
+    background-color:#4CAF50 ;
+}
+ul {
+    list-style-type: none;
+   
+	
+}
+
+.button {
+
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  
+}
+.button2 {
+width:50px;
+	height:40px;
+  background-color: #0000FF;
+
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  visibility:hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    
+}
+
+li a:hover {
+    background-color:black;
+	
+}
+#divhover:hover{
+   background-color:grey;
+   width:260px;
+   
+   }
+   
+#divhover a{
+
+
+text-decoration: none;
+ font-size: 20;
+color :black;
+
+}   
+   .w3schools-logo {
+   float =left;
+font-family:fontawesome;
+text-decoration:none;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+font-size:37px;
+letter-spacing:3px;
+color:#555555;
+display:block;
+position:relative;
+}
+.w3schools-logo .dotcom {color:#4CAF50;}
+@font-face {
+font-family:'fontawesome';
+
+font-style:normal;
+}
+
+
+.top-line {
+    float: right ;
+}
+h1 {
+    font-size: 80px;
+    color: #555555;
+    margin: 5px 0 -20px 0 ;
+  
+   }
+   p{
+   font-size: 40px;
+   color: #3a3a3a;
+   
+   }
+   .w3-button-1{
+   
+   margin: 60px 60px 50px 10px;
+    font-size: 15px;
+	    color: #ffffff;
+    background-color: rgb(60, 60, 60);
+	padding:20px;
+	text-align:center;
+   }
+   
+   
+   .w3-button-2{
+   
+   margin: 80px 60px 60px 170px;
+    font-size: 20px;
+	    color: #ffffff;
+    background-color: rgb(60, 60, 60);
+	padding:20px;
+	text-align:center;
+   }
+   
+    a.w3-button-2{
+   text-decoration:none;
+   
+   }
+   
+  a.w3-button-1{
+   text-decoration:none;
+   
+   }
+   #a-hover:hover{
+  background-color:rgb(180, 180, 180);
+  color:rgb(0, 0, 0);
+  }
+  
+  
+  w3-col l6 w3-center{
+  
+  
+    background-color:rgb(240, 240, 240);
+  
+  }
+  .w3-xlarge {
+    font-size:36px;
+}
+
+.w3-col .w3-button {
+    margin: 5px 5px 5px 0;
+    font-size: 16px;
+	 padding:20px;
+	text-align:center;
+	 color: #ffffff;
+	   background-color: rgb(60, 60, 60);
+}
+a.w3-button{
+   text-decoration:none;
+   
+   }
+#w3-button:hover{
+  background-color:rgb(180, 180, 180);
+  color:rgb(0, 0, 0);
+  }
+.xx-large{
+
+ font-size:50px;
+}
+.text-drek{
+ font-size:26px;
+    color: #3a3a3a;
+
+}
+.clear{
+clear:both;
+}
+* {box-sizing:border-box}
+
+
+.slideshow-container {
+  max-width: 80%;
+   margin-left:500px;
+}
+
+
+.mySlides {
+  display: none;
+      margin-top: -120px;
+
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+
+  width: auto;
+margin-top:-200;
+  padding: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.footer button a{
+ text-decoration: none;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 0.5em;
+color:black;
+font-size:18px;
+
+}
+.footer{
+width: 70%; text-align: center;margin: 0 auto; color:#555555; line-height: 1.5em;font-size: 18px; padding: 10px;
+}
+.footer p{
+text-transform: uppercase;
+background-color: #9f9f9f;
+padding: 10px 16px;
+margin:10px;
+font-size:15px;
+}
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+<span style ="height:70px">   <a class='w3schools-logo' href='//www.w3schools.com'>w3schools<span class='dotcom'>.com</span></a></span>
+ <span class="top-line"style= "position:relative;top:-20px" >THE WORLD'S LARGEST WEB DEVELOPER SITE</span>
+ 
+ 
+ <div id="div_lu">
+ <div style="display:inline-block; width:88%;float:left">
+<ul style="display:inline-block">
+  <li><a href="html project.html">TUTORIALS</a></li>
+  <li><a href="#REFERENCES">REFERENCES</a></li>
+  <li><a href="#EXAMPLES">EXAMPLES</a></li>
+</ul>
+
+	<div style="margin:20px;width:750px;float:right; height:100px;margin-top:20px;margin-right:-20%">
+	
+		
+	
+	<input type="text" name="serch" id="serch_text"  style="width:250px;height:30px;visibility:hidden; " placeholder="search"
+                     onfocus="userFocus(this);"/>
+					 <button id="serch_btn" class="button2"><i class="fas fa-search" style=" font-size: 20px;"></i>
+					 
+	<button class="button"   onclick="search();"><i class="fas fa-search" style="margin-top:20px;  font-size: 40px;"></i></button>
+	<button   class="button"><i class="fa fa-globe" style="margin-top:10px;  font-size: 40px;"></i> </button>
+
+</a>
+</div>
+</div>
+</div>
+
+
+
+      <div>
+            <div style="width:20%;height:2050px;background-color:#f0f0f0;  ;float:left;">
+                <table>
+				
+				<tr>
+                        <td><font size="5">  <h4 >HTML and CSS</h4> </font></td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td><div id = "divhover"  >  <a   href="nour .html"/> Learn XML <br> <br></td>
+                    </tr>
+                    <tr>
+                        <td><div  id = "divhover"  >   <a href="html project.html"/   > Learn CSS<br> <br></td>
+                    </tr>
+                    <tr>
+                        <td> <div  id = "divhover"  ><a href="html editor .html"/>Learn W3.CSS<br><br></td>
+                    </tr>
+                    <tr>
+                        <td> <div  id = "divhover"  > <a href="basics.html"/>Learn Colors<br><br></td>
+                    </tr>
+                    <tr>
+                        <td><div  id = "divhover"  > <a href="elements.html"/> Learn Bootstrap 3<br><br></td>
+                    </tr>
+                    <tr>
+                        <td><div  id = "divhover"  >  <a href="attirbutes.html"/> Learn Bootstrap 4<br><br></td>
+                    </tr>
+                        <tr>                                                                                                                              
+                        <td> <div  id = "divhover"  > <a href="#"/>Learn Icons <br><br></td>
+                    </tr>
+					 <tr>
+                        <td> <div  id = "divhover"  >  <a href="#"/>Learn Graphics <br><br></td>
+                    </tr>
+					 <tr>
+                        <td>   <div  id = "divhover"  >   <a href="#"/>Learn How To <br><br></td>
+                    </tr>
+					<tr>
+                        <td><font size="5">  <h4 >JavaScript</h4> </font></td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td><div id = "divhover"  >  <a   href="nour .html"/> Learn JavaScript <br> <br></td>
+                    </tr>
+                    <tr>
+                        <td><div  id = "divhover"  >   <a href="html project.html"/   > Learn jQuery<br> <br></td>
+                    </tr>
+                    <tr>
+                        <td> <div  id = "divhover"  ><a href="html editor .html"/>Learn AngularJS<br><br></td>
+                    </tr>
+                    <tr>
+                        <td> <div  id = "divhover"  > <a href="basics.html"/>Learn JSON<br><br></td>
+                    </tr>
+                    <tr>
+                        <td><div  id = "divhover"  > <a href="elements.html"/> Learn AJAX<br><br></td>
+                    </tr>
+                    <tr>
+                        <td><div  id = "divhover"  >  <a href="attirbutes.html"/> Learn W3.JS<br><br></td>
+                    </tr>
+					 </tr>
+					  <tr>
+					 <td><font size="5">  <h4 >Server Side</h4> </font></td>
+                       
+                        </tr>
+						
+                        <td> <div  id = "divhover"  > <a href="#"/>Learn SQL <br><br></td>
+                    </tr>
+					 <tr>
+                        <td> <div  id = "divhover"  >  <a href="#"/>Learn PHP <br><br></td>
+                    </tr>
+					 <tr>
+                        <td>   <div  id = "divhover"  >   <a href="#"/>Learn Python <br><br></td>
+                    </tr>
+					   <tr>
+                        <td><div  id = "divhover"  >   <a href="html project.html"/   > Learn Java<br> <br></td>
+                    </tr>
+                    <tr>
+                        <td> <div  id = "divhover"  ><a href="html editor .html"/>Learn ASP<br><br></td>
+                    </tr>
+                    <tr>
+                        <td> <div  id = "divhover"  > <a href="basics.html"/>Learn Node.js<br><br></td>
+                    </tr>
+                    <tr>
+                        <td><div  id = "divhover"  > <a href="elements.html"/> Learn Raspberry Pi<br><br></td>
+                    </tr>
+					
+					 <tr>
+					 <td><font size="5">  <h4 >Web Building</h4> </font></td>
+                       
+                        </tr>
+                    <tr>
+                        <td><div  id = "divhover"  >  <a href="attirbutes.html"/> Web Templates<br><br></td>
+                    </tr>
+                        <tr>                                                                                                                              
+                        <td> <div  id = "divhover"  > <a href="#"/>Web Statistics <br><br></td>
+                    </tr>
+					 <tr>
+                        <td> <div  id = "divhover"  >  <a href="#"/> Web Certificates<br><br></td>
+                    </tr>
+					 <tr>
+                        <td>   <div  id = "divhover"  >   <a href="#"/>Web Editor <br><br></td>
+                    </tr>
+					<tr>
+                        <td>   <div  id = "divhover"  >   <a href="#"/>Web Development<br><br></td>
+                    </tr>
+					<tr>
+					 <td><font size="5">  <h4 >XML Tutorials</h4> </font></td>
+                       
+                        </tr>
+						 <tr>
+                        <td><div  id = "divhover"  >  <a href="attirbutes.html"/> Learn XML<br><br></td>
+                    </tr>
+                        <tr>                                                                                                                              
+                        <td> <div  id = "divhover"  > <a href="#"/>Learn XML AJAX <br><br></td>
+                    </tr>
+					 <tr>
+                        <td> <div  id = "divhover"  >  <a href="#"/> Learn XML DOM<br><br></td>
+                    </tr>
+					 <tr>
+                        <td>   <div  id = "divhover"  >   <a href="#"/>Learn XML DTD <br><br></td>
+                    </tr>
+					<tr>
+                        <td>   <div  id = "divhover"  >   <a href="#"/>Learn XML Schema<br><br></td>
+                    </tr>
+					     <tr>                                                                                                                              
+                        <td> <div  id = "divhover"  > <a href="#"/>Learn XSLT <br><br></td>
+                    </tr>
+					 <tr>
+                        <td> <div  id = "divhover"  >  <a href="#"/> Learn XPath<br><br></td>
+                    </tr>
+					 <tr>
+                        <td>   <div  id = "divhover"  >   <a href="#"/>Learn XQuery <br><br></td>
+                    </tr>
+					<tr>
+                        <td>   <div  id = "divhover"  >   <a href="#"/><br><br></td>
+                    </tr>
+					
+                </table>
+            </div  >
+<!---------------------------------------     html----------------------   -->
+			<img src="14877708_1800361126848904_554666393_n.PNG" alt="html picture"  style="width:530px;height:406px; padding:0em; float:right;">
+<br><br><br><br>
+         
+		 <h1 align="center">HTML</h1>
+		 <br><br><br>
+		 <p align="center">The language for building web pages</p>
+		 <a  id="a-hover"    align="center"  href="/html/default.asp" class="w3-button-1">LEARN HTML</a>
+         <a id="a-hover"     align="center"   href="/tags/default.asp" class="w3-button-1">HTML REFERENCE</a><br><br><br>
+		 
+		 
+		 <!---------------------------------- css -------------------- -->
+		 
+		 <div class="w3-col l6 w3-center" style=" width:1340px;height:450px; background-color:rgb(240, 240, 240);" >
+		 
+		 <br><br>
+	<div>	 <img src="2.PNG" alt="html picture"  style="width:530px;height:406px; padding:0em; float:left;"> </div>
+<div style= "position:relative;left:70px ;  ">		 
+  <h1>CSS</h1>
+  <p align="center" class="w3-xlarge">The language for buliding web pages</p>
+  
+  <a  id="w3-button"   href="/css/default.asp"      class="w3-button w3-dark-grey">LEARN CSS</a>
+  <a  id="w3-button"  href="/cssref/default.asp"    class="w3-button w3-dark-grey">CSS REFERENCE</a></div>
+ </div>
+ <!--        java script--------------------                  -->
+ <br><br>
+ <img src="3.PNG" alt="html picture"  style="width:530px;height:406px; padding:0em; float:right;">
+<br><br>
+         
+		 <h1 align="center">JavaScript</h1>
+		 <br><br><br>
+		 <p align="center">The language for building web pages</p>
+		 <a  id="a-hover"   align="center"  href="/html/default.asp" class="w3-button-2"> LEARN  Java  script</a> <br><br><br><br >
+         <a id="a-hover"   align="cebter"   href="/tags/default.asp" class="w3-button-2">  Java script REFERENCE</a><br><br>
+ 
+ <!-- ------------------------------------  table --------------------- -- -->
+ <br><br><br>
+ <div   style=" width:1340px; height:500px; background-color:rgb(240, 240, 240);">
+<table style ="width:900;" >
+
+  <tr  >
+    <td style ="width:400;height:200 " ><h2 class="xx-large"  align="center">SQL</h2>
+	<h4   class ="text-drek"   align="center">A language for accessing databases</h4>
+	 <a  id="a-hover"    align="center"  href="/html/default.asp" class="w3-button-2">LEARN SQL</a>
+	
+	</td>
+    <td>
+
+	
+	<td style ="width:450; height:200px ;  bgcolor=#ffffff;" ><h2 class="xx-large"  align="center">PHP</h2>
+	<h4   class ="text-drek"   align="center">A language for accessing databases</h4>
+	 <a  id="a-hover"    align="center"  href="/html/default.asp" class="w3-button-2">LEARN PHP</a><br><br><br>
+	</td>
+  </tr>
+  <tr>
+    <td   style ="width:400;">
+	<h2 class="xx-large"  align="center">jQuery</h2>
+	<h4   class ="text-drek"   align="center">A JavaScript library for developing web pages</h4>
+	 <a  id="a-hover"    align="center"  href="/html/default.asp" class="w3-button-2">LEARN jQuery</a>
+	</td>
+	
+	</td>
+    <td>
+	 <td   style ="width:400; ">
+	<h2 class="xx-large"  align="center">Python</h2>
+	<h4   class ="text-drek"   align="center">A web server programming language</h4>
+	 <a  id="a-hover"    align="center"  href="/html/default.asp" class="w3-button-2">LEARN Python</a>
+	</td>
+	
+	
+	
+	</td>
+  </tr>
+</table>
+</div>
+			 
+        
+<div class="clear"></div>  
+              
+    <div class="slideshow-container">
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="tes.PNG">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="9.png">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="8.png">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<!--------------------fotor----------------->	   
+<div class="footer" style="">
+                <button><a href="#">Web Certificates</a></button>
+        
+                <p>W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using this site, you agree to have read and accepted our terms of use, cookie and privacy policy.
+                    Copyright 1999-2016 by Refsnes Data. All Rights Reserved.</p>
+            </div>            
+  
+
+<br>
+
+<!-- The dots/circles -->
+
+</br>
+</br>
+			  
+			 
+        
+		  
+	<script>
+function search()
+{
+  document.getElementById('serch_text').style.visibility='visible';
+//document.getElementById('serch_text').style.display = 'block';
+document.getElementById('serch_btn').style.visibility='visible';
+ 
+}
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+
+
+
+
+
+</html>
